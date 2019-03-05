@@ -1,0 +1,40 @@
+{%load static from staticfiles%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{%static 'css/bootstarp.min.css'%}" type="text/css" >
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstarp.min.css">
+
+</head>
+<body>
+
+
+
+{%for i in doc%}
+<table class="table table-responsive">
+<th>Doctor Details</th>
+    <tr><td>Doctor name</td></tr>
+    </tr><td>{{i.Dname}}</td></tr>
+<tr><td>{{i.Ddepartment}}</td></tr>
+<tr><td>{{i.Dhospital}}</td></tr>
+<tr><td>{{i.Demail}}</td></tr>
+<tr><td>{{i.Dage}}</td></tr>
+<tr><td>{{i.Dfee}}</td></tr>
+<tr><td>{{i.Dprofile}}</td></tr>
+</table>
+
+
+
+
+
+
+
+
+{%endfor%}
+
+</body>
+</html>

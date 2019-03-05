@@ -1,0 +1,49 @@
+{%load static from staticfiles%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mysite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{%static 'css/bootstarp.min.css'%}" type="text/css" >
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--<script src="main.js"></script>-->
+</head>
+
+
+<body class="background-panel:#bdbdbd grey lighten-1">
+    <header class="container center-align">
+        <h5><marquee onmouseover="stop()" onmouseout="start()" style="color:blue">CHOOSE YOUR OPTION FROM BELOW</marquee></h5>
+    </header>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+        <br>
+        <a class="center-align" style="display:block" href="/admin" class="">Admin Login</a>
+        <div class="container">
+		<div class="jumbotron">
+            <p style="color:blue"  ><h5 style="color:blue">Django Welcomes You </h5></p>
+            <ul>
+                <li><a href="date" class="btn">DATE</a></li>
+                <li><a href="temp" class="btn">Template</a></li>
+                <li><a href="time/2" class="btn">timeDifference</a></li>
+                <li><a href="base" class="btn">Welcome page</a></li>
+                <li><a href="cbview" class="btn">Classed based views</a></li>
+                <li><a href="contact" class="btn">Contact us</a></li>
+                <li><a href="admin" class="btn">Admin Panel </a></li>
+                <li><a href="doctor" class="btn">Doctors </a></li>
+                 <li><a href="user" class="btn">UserSignUp </a></li>
+
+
+            </ul>
+
+		</div>
+    </div>
+</body>
+<a href="" class="btn btn-info" >Refresh</a>
+
+</html>
